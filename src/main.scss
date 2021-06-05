@@ -1,0 +1,58 @@
+@import "styles/const";
+@import "styles/color-box";
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: $dark_shade_75;
+}
+h1 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: $dark_shade_100;
+}
+h2 {
+  @extend h1;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+}
+h3 {
+  @extend h1;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+}
+.container {
+  padding: 145px 158px 145px 150px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.item {
+  display: inline-flex;
+  p {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 28px;
+    span {
+      font-weight: 400;
+    }
+  }
+}
