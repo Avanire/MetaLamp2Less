@@ -1,0 +1,6 @@
+mixin titleW(options)
+    -
+       var tag = options.tag || options.name.toLowerCase()
+       var desc = options.description || "This one is the sub-section or widget title"
+    #{tag}(class = "title-wrapper-name")=options.name
+    #{tag}(class = "title-wrapper-description")=desc

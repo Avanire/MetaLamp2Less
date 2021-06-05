@@ -1,0 +1,7 @@
+mixin colorW(options)
+    -
+        var imgClassName = "block-img-" + options.title.replace(/\s/g, "-").replace(/[.%*+?^${}()|[\]\\]/g, "").toLowerCase()
+    div(class = imgClassName)
+    h2=options.title
+        br
+        span=options.description

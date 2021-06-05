@@ -1,0 +1,13 @@
+@import "./src/styles/const";
+
+.title-wrapper-name {
+  font-weight: normal;
+  color: $dark_shade_25;
+  text-align: right;
+  width: 10%;
+}
+.title-wrapper-description {
+  margin-left: 30px;
+  width: 90%;
+  padding-right: 50px;
+}

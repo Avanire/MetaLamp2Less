@@ -1,5 +1,6 @@
 @import "styles/const";
-@import "styles/color-box";
+@import "components/colorWrapper/color-box";
+@import "components/titleWrapper/title-wrapper";
 
 body {
   font-family: Montserrat, sans-serif;
@@ -28,7 +29,6 @@ h3 {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  /* identical to box height */
 
   text-transform: uppercase;
 }
@@ -41,18 +41,20 @@ h3 {
 }
 .wrapper {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: column;
 }
 .item {
   display: inline-flex;
-  p {
-    font-weight: bold;
-    font-size: 19px;
-    line-height: 28px;
-    span {
-      font-weight: 400;
-    }
+  span {
+    font-weight: 400;
   }
+}
+.color-wrapper {
+  @extend .wrapper;
+  width: 65%;
+}
+.title-wrapper {
+  @extend .wrapper;
+  width: 35%;
 }
